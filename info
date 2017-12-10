@@ -1,0 +1,9 @@
+mtools
+https://stackoverflow.com/questions/22385189/add-files-to-vfat-image-without-mounting/29798605#29798605
+https://unix.stackexchange.com/questions/115327/mkfsdos-define-the-size-of-fat1632-file-system-on-usb-pendrive-in-linux
+https://superuser.com/questions/668485/creating-a-fat-file-system-and-save-it-into-a-file-in-gnu-linux
+http://www.tavi.co.uk/phobos/fat.html
+
+
+http://home.teleport.com/~brainy/lfn.htm
+valgrind —tool=memcheck —log-file="valgrind.log" —track-origins=yes —show-leak-kinds=all —leak-check=yes —track-fds=yes ./server
