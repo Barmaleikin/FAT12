@@ -121,17 +121,11 @@ print_f_time(unsigned short d)
 	unsigned char i;
 
 	printf("\ttime: ");
-	for (i = 0; i < 5; i++) {
-		hours |= (d >> 11) & (1 << i);
-	}
+        hours |= (d >> 11) & ( (1 << 5) -1);
 	hours += 1;
-	for (i = 0; i < 6; i++) {
-		minutes |= (d >> 5) & (1 << i);
-	}
+        minutes |= (d >> 5) & ( (1 << 6) -1 );
 	minutes += 1;
-	for (i = 0; i < 5; i++) {
-		seconds |= d & (1 << i);
-	}
+        seconds |= d & ( (1 << 5) -1 );
 	seconds *= 2;
 	seconds += 1;
 
